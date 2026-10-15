@@ -15,6 +15,9 @@ Using the np.linalg.solve(), we can find the solutions.
 End the program
 ## Program:
 
+import os
+os.environ["OPENBLAS_NUM_THREADS"]= "1"
+
 import numpy as np
 
 A = np.array([[1, 1], [2, 3]])
@@ -25,8 +28,7 @@ solution = np.linalg.solve(A, B)
 print(solution)
 
 ## Output:
-
-[1. 1.]
+<img width="1249" height="799" alt="{BD595721-9099-41B4-B17D-BAE7183EFF39}" src="https://github.com/user-attachments/assets/fd1a2282-0d60-4aea-b446-c7f7ae19b00f" />
 
 ## Result: 
 Thus the solutions for the linear equations are successfully solved using python program
